@@ -16,16 +16,17 @@
 
 ### Tested configurations
 
-- macOS Ventura (arm64)
-- macOS Ventura (arm64e)
-- iOS 16.1 (arm64)
-- iOS 16.1 (arm64e)
+- iOS 15.8 (arm64)
+- iOS 16.6 Beta 1 (arm64e)
 
 ### Used by
-- Dopamine (jailbreak for A12-A15 + M1 on iOS 15.0-15.4.1)
-- palera1n (jailbreak for A8-A11 on iOS 15.0+)
-- meowbrek2 (jailbreak for A8-A11 on iOS 15.0-15.8.1)
-- Def1nit3lyN0tAJa1lbr3akTool (jailbreak for A9-A11 on iOS 16.0-16.6.1)
+
+- iPhone 6s iOS 15.2
+- iPhone 6s+ iOS 15.7.6
+- iPhone 7+ iOS 15.8
+- iPad 7 iPadOS 15.6 RC
+- iPhone 11 iOS 16.6 Beta 1
+- iPhone X iOS 16.6 Beta 2
 
 ### Usage
 
