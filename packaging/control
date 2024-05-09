@@ -1,6 +1,6 @@
 Package: ellekit
 Name: EllieKit
-Version: @DEB_VERSION@
+Version: 3.1.4
 Architecture: @DEB_ARCH@
 Maintainer: Dhinak G <dhinak@dhinak.net>
 Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
