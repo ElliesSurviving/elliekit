@@ -58,7 +58,7 @@ func _showSafeModeAlert() {
         
         let exitAction = UIAlertAction(title: "Exit Safe Mode", style: .default, handler: { action in
             alert = nil
-            try? FileManager.default.removeItem(atPath: "/var/mobile/.eksafemode")
+            try? FileManager.default.removeItem(atPath: "/var/jb/.eksafemode")
             exit(0)
         })
 
@@ -163,7 +163,7 @@ func trap(signals: [Int32], action: (@convention(c) (Int32) -> Void)?) {
 }
 
 func handleSBCrash(currentSig: Int32) {
-    FileManager.default.createFile(atPath: "/var/mobile/.eksafemode", contents: Data())
+    FileManager.default.createFile(atPath: "/var/jb/.eksafemode", contents: Data())
     allSignals.forEach {
         signal($0, SIG_DFL)
     }
@@ -187,11 +187,11 @@ public func tweak_entry() {
         
     NSLog("Hello world, SpringBoard!")
                 
-    if FileManager.default.fileExists(atPath: "/var/mobile/.eksafemode") {
+    if FileManager.default.fileExists(atPath: "/var/jb/.eksafemode") {
         performHooks()
     } else if checkVolumeUp() {
         tprint("Volume up!!!")
-        FileManager.default.createFile(atPath: "/var/mobile/.eksafemode", contents: Data())
+        FileManager.default.createFile(atPath: "/var/jb/.eksafemode", contents: Data())
         exit(0)
     }
         

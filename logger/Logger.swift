@@ -36,7 +36,7 @@ struct TextLog: TextOutputStream {
     
     private var enableLogging: Bool {
         #if !os(macOS)
-        FileManager.default.fileExists(atPath: "/private/var/mobile/.ekenablelogging")
+        FileManager.default.fileExists(atPath: "/var/jb/.ekenablelogging")
         #else
         FileManager.default.fileExists(atPath: "/Library/TweakInject/.ekenablelogging")
         #endif
@@ -47,7 +47,7 @@ struct TextLog: TextOutputStream {
         #if os(iOS)
         var log: URL {
             if rootless {
-                NSURL.fileURL(withPath: ("/var/jb/var/mobile/log.txt" as NSString).resolvingSymlinksInPath)
+                NSURL.fileURL(withPath: ("/var/jb/log.txt" as NSString).resolvingSymlinksInPath)
             } else {
                 NSURL.fileURL(withPath: "/private/var/mobile/log.txt")
             }
