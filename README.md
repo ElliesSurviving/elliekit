@@ -1,5 +1,7 @@
 ##  ElleKit
 
+(ANOTHER WINTERS COLLECTIVES PERSONAL FORK, DONT USE THIS, ITS ADAPTED TO WORK FOR US AND NO ONE ELSE)
+
 ### What this is
 
 - A C function hooker that patches memory pages directly
