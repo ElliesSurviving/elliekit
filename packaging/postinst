@@ -19,10 +19,10 @@ function run_loader() {
 }
 
 # Remove log if it exists
-rm -f @INSTALL_PREFIX@/var/mobile/log.txt
+rm -f @INSTALL_PREFIX@/var/jb/log.txt
 # Older builds of ElleKit previously always put the log file here
-if [[ -f /var/mobile/log.txt ]]; then
-    rm /var/mobile/log.txt
+if [[ -f /var/jb/log.txt ]]; then
+    rm /var/jb/log.txt
 fi
 
 if [[ -f /dev/rmd0 ]]; then

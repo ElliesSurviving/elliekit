@@ -49,7 +49,7 @@ struct TextLog: TextOutputStream {
             if rootless {
                 NSURL.fileURL(withPath: ("/var/jb/log.txt" as NSString).resolvingSymlinksInPath)
             } else {
-                NSURL.fileURL(withPath: "/private/var/mobile/log.txt")
+                NSURL.fileURL(withPath: "/var/jb/log.txt")
             }
         }
         #else
