@@ -97,7 +97,7 @@ public final class PIDExceptionHandler {
         mach_port_deallocate(mach_task_self_, self.port)
         mach_port_destroy(mach_task_self_, self.port)
         
-        FileManager.default.createFile(atPath: "/var/jb/.eksafemode", contents: Data())
+        FileManager.default.createFile(atPath: "/var/jb/.libhooker_recovery", contents: Data())
         
         kill(pid, 9)
     }

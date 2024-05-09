@@ -36,9 +36,9 @@ struct TextLog: TextOutputStream {
     
     private var enableLogging: Bool {
         #if !os(macOS)
-        FileManager.default.fileExists(atPath: "/var/jb/.ekenablelogging")
+        FileManager.default.fileExists(atPath: "/var/jb/.enable_logging")
         #else
-        FileManager.default.fileExists(atPath: "/Library/TweakInject/.ekenablelogging")
+        FileManager.default.fileExists(atPath: "/Library/TweakInject/.enable_logging")
         #endif
     }
     

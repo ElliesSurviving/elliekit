@@ -344,7 +344,7 @@ static void injection_init(void) {
         }
     }
     
-    if (!access("/var/jb/.eksafemode", F_OK)) {
+    if (!access("/var/jb/.libhooker_recovery", F_OK)) {
         return;
     }
 #endif
